@@ -20,7 +20,7 @@ a = input("Günlük Adı :")
 
 if secim == "1":
     try:         
-        gunlukoku=open("Desktop\Günlük\Dep\ "+a+".günlük", "r")
+        gunlukoku=open("Desktop\Günlük\ "+a+".günlük", "r")
         print("Yazı : "+gunlukoku.read())
         gunlukoku.close()
     except FileNotFoundError:
@@ -29,7 +29,7 @@ if secim == "1":
 if secim == "2":
     try:
         b=input("Dosya dizini : ")
-        gunlukyaz=open("Desktop\Günlük\Dep\ "+a+".günlük", "w+")
+        gunlukyaz=open("Desktop\Günlük\ "+a+".günlük", "w+")
         yaz = input("Yazılacak yazı : ")
         gunlukyaz.write(yaz)
         gunlukyaz.close()
